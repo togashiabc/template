@@ -1,0 +1,11 @@
+
+.admin-page-top {
+    position: fixed;
+    bottom: 130px;
+    right: 40px;
+    background: #666;
+    color: #F8F7F3;
+	padding: 10px;
+	text-align: center;
+	display: block;
+}
