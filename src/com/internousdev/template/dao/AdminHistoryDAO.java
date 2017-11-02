@@ -29,7 +29,7 @@ public class AdminHistoryDAO {
 	 * @return adminhistorylist 販売履歴
 	 */
 	public ArrayList<AdminHistoryDTO> select(int itemId) {
-		DBConnector db = new DBConnector("com.mysql.jdbc.Driver", "jdbc:mysql://localhost/", "template", "root", "mysql");
+		DBConnector db = new DBConnector("com.mysql.jdbc.Driver", "jdbc:mysql://localhost/", "template", "root");
 		Connection con = db.getConnection();
 
 		ArrayList<AdminHistoryDTO> adminhistoryList = new ArrayList<AdminHistoryDTO>();

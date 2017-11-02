@@ -7,7 +7,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title><s:text name="lang.admin_contact.topTitle" /></title>
+<title>問い合わせ履歴</title>
 
     <!-- Bootstrap -->
     <link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
@@ -15,7 +15,7 @@
     <!-- Stylesheet
     ================================================== -->
     <link rel="stylesheet" type="text/css"  href="css/style.css">
-    <link rel="stylesheet" type="text/css"  href="css/toiawase_style.css">
+
     <link rel="stylesheet" type="text/css" href="css/admin-page-top.css">
 
     <!-- Javascripts
@@ -27,35 +27,34 @@
 <body>
     <header><s:include value="admin_header.jsp" /></header>
 
-	<h1><s:text name="lang.admin_contact.h1title" /></h1>
+	<h1>問い合わせ履歴</h1>
     <hr>
 
 <!-- 	検索バーここから -->
 <div class="text-center">
 <s:form action="AdminContactAction">
 
-	<input type="text" name="searchName" placeholder="<s:text name="lang.admin_contact.enterName" />" size="20" />
+	<input type="text" name="searchName" placeholder="氏名" size="20" />
 
 	<select name="searchTitle">
-			<option value=""><s:text name="lang.admin_contact.all" /></option>
 
-			<option value="<s:text name="lang.admin_contact.unspecified" />" ><s:text name="lang.admin_contact.unspecified" /></option>
 
-			<option value="<s:text name="lang.admin_contact.item" />" ><s:text name="lang.admin_contact.item" /></option>
+			<option value="<s:text name="lang.admin_contact.unspecified" />" >指定なし</option>
 
-			<option value="<s:text name="lang.admin_contact.payment" />" ><s:text name="lang.admin_contact.payment" /></option>
+			<option value="<s:text name="lang.admin_contact.item" />" >商品名</option>
 
-            <option value="<s:text name="lang.admin_contact.change" />" ><s:text name="lang.admin_contact.change" /></option>
+			<option value="<s:text name="lang.admin_contact.payment" />" >支払方法</option>
 
-			<option value="<s:text name="lang.admin_contact.other" />" ><s:text name="lang.admin_contact.other" /></option>
+
+			<option value="<s:text name="lang.admin_contact.other" />" >その他</option>
 	</select>
 
 	<select name="searchSort">
-			<option value="-1"><s:text name="lang.admin_contact.sortNew" /></option>
-			<option value="1" ><s:text name="lang.admin_contact.sortOld" /></option>
+			<option value="-1">新しい順</option>
+			<option value="1" >古い順</option>
 	</select>
 
-	<input type="submit" value="<s:text name="lang.admin_contact.search" />" />
+	<input type="submit" value="検索" />
 
 </s:form>
 </div>
@@ -169,15 +168,11 @@
 </s:if>
 
 
-<s:else><h1><s:text name="lang.admin_contact.display" /></h1></s:else>
+<s:else><h1>表示</h1></s:else>
 
 
 <div><a href="#"   class="admin-page-top">PAGE TOP ▲</a></div>
 
-	<footer><c:import url="http://localhost:8080/openconnect/footer.jsp" /></footer>
 </body>
-	<!-- Javascripts
-    ================================================== -->
-	<script type="text/javascript" src="js/admin-page-top.js"></script>
 
 </html>

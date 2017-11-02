@@ -1,13 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8" %>
     <%@ taglib prefix="s" uri="/struts-tags" %>
-    <!-- ここから国際化 -->
 <!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <!-- 商品管理画面 -->
-<title><s:text name="lang.admin_item.title" /></title>
+<title>商品管理画面</title>
     <!-- Bootstrap -->
     <link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -34,12 +33,12 @@
 
 <div class="container">
 <!-- 商品管理 -->
- <h1><s:text name="lang.admin_item.head" /></h1>
+ <h1>商品管理</h1>
  <hr>
  <!-- 商品名を入力 -->
-      <p><s:text name="lang.admin_item.order" /></p>
+      <p>商品名</p>
 <s:form action="AdminItemAction">
-		<s:textfield name="itemsName" placeholder="ITEM NAME" />
+		<s:textfield name="itemsName" placeholder="商品名"/>
 <!-- 検索 -->
 		<s:submit value="%{getText('lang.admin_item.sarch')}" name="submit" />
 </s:form>
@@ -60,25 +59,25 @@
 <table class="item">
         <tr>
 <!-- 商品ID -->
-            <th><s:text name="lang.admin_item.id" /></th>
+            <th>商品ID</th>
 <!-- 商品名 -->
-            <th><s:text name="lang.admin_item.name" /></th>
+            <th>商品名</th>
 <!-- 単価 -->
-           <th><s:text name="lang.admin_item.price" /></th>
+           <th>単価</th>
 <!-- 在庫数 -->
-            <th><s:text name="lang.admin_item.stocks" /></th>
+            <th>在庫数</th>
 <!-- 売り上げ数 -->
-            <th><s:text name="lang.admin_item.sales" /></th>
+            <th>売上</th>
 <!-- カテゴリー -->
-            <th><s:text name="lang.admin_item.cate" /></th>
+            <th>カテゴリー</th>
 <!-- 登録日 -->
-            <th><s:text name="lang.admin_item.regday" /></th>
+            <th>登録日</th>
 <!-- 更新日 -->
-            <th><s:text name="lang.admin_item.updday" /></th>
+            <th>更新日</th>
 <!-- デリートキー -->
-            <th><s:text name="lang.admin_item.delkey" /></th>
+            <th>削除</th>
 <!-- 商品画像 -->
-            <th><s:text name="lang.admin_item.img" /></th>
+            <th>商品画像</th>
             <td rowspan="4">
                  <s:form action="GoAdminUpdateAction">
                      <s:hidden name="itemsName"></s:hidden>
@@ -120,7 +119,7 @@
 </table>
 </s:iterator>
 <!-- 表示件数： -->
-<s:text name="lang.admin_item.number" />
+<s:text name="表示" />
 <s:property value="number"/>
 
 <a href ="#" class="admin-page-top">PAGE TOP ▲</a>
@@ -169,14 +168,6 @@
 		</s:if>
 
 </body>
-
-
-<footer>
-	<c:import url="http://localhost:8080/openconnect/footer.jsp" />
-	</footer>
-
-
-
 
 
 </html>

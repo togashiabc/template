@@ -79,6 +79,10 @@
 			<s:if test="#session.id != null">
 				<p>ログアウトする場合は<a href='<s:url action="LogoutAction" />'>こちら</a></p>
 			</s:if>
+
+
+				<p>お問い合わせは<a href="contact.jsp">こちら</a></p>
+
 		</div>
 	</div>
 	<div id="footer">

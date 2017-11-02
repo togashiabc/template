@@ -9,9 +9,7 @@ import com.internousdev.template.util.DateUtil;
 
 public class UserCreateComplateDAO {
 
-	private DBConnector dbConnector = new DBConnector();
-
-	private Connection connection = dbConnector.getConnection();
+	private Connection connection = DBConnector.getConnection();
 
 	private DateUtil dateUtil = new DateUtil();
 

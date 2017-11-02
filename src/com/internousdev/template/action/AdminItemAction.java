@@ -138,7 +138,6 @@ public class AdminItemAction extends ActionSupport{
 			//ページネーション処理
 			ArrayList<PageObject> allPages = new ArrayList<PageObject>();
 			AllPages allp = new AllPages();
-			allPages=allp.paginate(itemList, 10);
 			setMaxPage(allp.getMaxPage(itemList, 10));
 			setDisplayList(allPages.get(pageNum-1).getPaginatedList());
 			result = SUCCESS;

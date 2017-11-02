@@ -9,7 +9,7 @@ import com.internousdev.template.util.DateUtil;
 
 public class BuyItemComplateDAO {
 
-	private DBConnector dbConnector = new DBConnector();
+	private DBConnector dbConnector = new DBConnector(null, null, null, null);
 
 	private Connection connection = dbConnector.getConnection();
 

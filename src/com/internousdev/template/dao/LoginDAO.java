@@ -9,9 +9,9 @@ import com.internousdev.template.util.DBConnector;
 
 public class LoginDAO {
 
-	private DBConnector db = new DBConnector();
+	private DBConnector db = new DBConnector(null, null, null, null);
 
-	private Connection connection = dbConnector.getConnection();
+	private Connection connection = DBConnector.getConnection();
 
 	private LoginDTO loginDTO = new LoginDTO();
 

@@ -22,7 +22,7 @@
     <script src="js/jquery.slick.min.js"></script>
     <script src="./js/jquery-3.2.1.min.js"></script>
 
-<title><s:text name="lang.admin_history.title" /></title>
+<title>販売履歴画面</title>
 
 </head>
 
@@ -38,7 +38,7 @@
 
 
 	<h1>
-       <s:text name="lang.admin_history.title" />
+      販売履歴
 	</h1>
 	 <hr>
 
@@ -48,11 +48,11 @@
 
 
 
-	<p><s:text name="lang.admin_history.search" />
+	<p>検索
 	</p>
 
     <s:form action="AdminHistoryAction">
-		<input type="number" name="itemId" size="50" placeholder="ITEM ID" min="0" max="1000000000">
+		<input type="number" name="itemId" size="50" placeholder="商品 ID" min="0" max="1000000000">
 		<input type="submit" value="検索/Search">
 	</s:form>
 
@@ -71,13 +71,11 @@
 
             <!-- table表示項目 -->
 
-			<th><s:text name="lang.admin_history.itemid" /></th>
-			<th><s:text name="lang.admin_history.itemname" /></th>
-            <th><s:text name="lang.admin_history.purchaseid" /></th>
-            <th><s:text name="lang.admin_history.price" /></th>
-            <th><s:text name="lang.admin_history.quantities" /></th>
-            <th><s:text name="lang.admin_history.subtotal" /></th>
-            <th><s:text name="lang.admin_history.purchasedate" /></th>
+			<th>商品ID</th>
+			<th>商品名</th>
+            <th>個数</th>
+            <th>合計金額</th>
+            <th>購入情報</th>
 
 
 </tr>
@@ -95,8 +93,7 @@
             <td><s:property value="itemsName" /></td>
              <!-- 購入者ID -->
             <td><s:property value="purchaseId" /></td>
-            <!-- 価格 -->
-            <td>&yen;<fmt:formatNumber value="${price}" /></td>
+
             <!-- 個数 -->
             <td><s:property value="quantities" /></td>
             <!-- 合計金額 -->
@@ -121,12 +118,6 @@
 <script type="text/javascript" src="js/admin-page-top.js"></script>
 
 </body>
-
-
-<!-- フッター -->
-<footer>
-	<c:import url="http://localhost:8080/openconnect/footer.jsp" />
-	</footer>
 
 
 

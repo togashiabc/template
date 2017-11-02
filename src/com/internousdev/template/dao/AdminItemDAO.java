@@ -20,7 +20,7 @@ public class AdminItemDAO {
 	 * @return itemList 商品情報
 	 */
 	public ArrayList<ItemDTO> select(String itemsName){
-		DBConnector db=new DBConnector("com.mysql.jdbc.Driver", "jdbc:mysql://localhost/", "template", "root","mysql");
+		DBConnector db=new DBConnector("com.mysql.jdbc.Driver", "jdbc:mysql://localhost/", "template", "root");
 		Connection con=db.getConnection();
 
 		ArrayList<ItemDTO> itemList=new ArrayList<ItemDTO>();

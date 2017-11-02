@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Legmina</title>
+  <title>管理者</title>
   <meta charset="UTF-8">
      <!-- Bootstrap -->
     <link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
@@ -29,7 +29,7 @@
         <nav id="menu" class="navbar navbar-default">
             <div class="container">
                 <div class="navbar-header">
-                <a class="navbar-brand logo" href="admin_top.jsp">Legmina</a>
+                <a class="navbar-brand logo" href="admin_top.jsp">管理者</a>
                     <div class="collapse navbar-collapse" id="">
                       <ul class="nav navbar-nav navbar-right">
                     	 <li><a href="<s:url action="logoutAction"/>"> <s:text name="lang.admin_header.logout"/></a></li>
@@ -55,19 +55,19 @@
         <nav id="menu" class="navbar navbar-default">
             <div class="container">
                 <div class="navbar-header">
-                <a class="navbar-brand logo" href="admin_top.jsp">Legmina</a>
+                <a class="navbar-brand logo" href="admin_top.jsp">管理者</a>
                     <div class="collapse navbar-collapse" id="">
                       <ul class="nav navbar-nav navbar-right">
-                        <li><a href="login.jsp"><s:text name="lang.admin_header.login"/></a></li>
+                        <li><a href="login.jsp">ログイン</a></li>
                       </ul>
                     </div>
                     <div class="collapse navbar-collapse" id="">
                       <ul class="nav navbar-nav navbar-right">
-                        <li><a href="admin_top.jsp"><s:text name="lang.admin_header.top"/></a></li>
-                        <li><a href="admin_item.jsp"><s:text name="lang.admin_header.item"/></a></li>
-                        <li><a href="admin_history.jsp"><s:text name="lang.admin_header.history"/></a></li>
-                        <li><a href="admin_user.jsp"><s:text name="lang.admin_header.users"/></a></li>
-                        <li><a href='<s:url action="AdminContactAction"/>'><s:text name="lang.admin_header.inquiry"/></a></li>
+                        <li><a href="admin_top.jsp">管理者トップ</a></li>
+                        <li><a href="admin_item.jsp">商品情報</a></li>
+                        <li><a href="admin_history.jsp">購入履歴</a></li>
+                        <li><a href="admin_user.jsp">ユーザー情報</a></li>
+                        <li><a href='<s:url action="AdminContactAction"/>'>お問い合わせ</a></li>
                       </ul>
                     </div>
                     <!-- /.navbar-collapse -->

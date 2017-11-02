@@ -5,18 +5,13 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
 import com.internousdev.template.dto.MyPageDTO;
 import com.internousdev.template.util.DBConnector;
 
 public class MyPageDAO {
-	private DBConnector dbConnector = new DBConnector();
+	private Connection connection = DBConnector.getConnection();
 
-	private Connection connection = dbConnector.getConnection();
-	
 	/**
 	 * 商品履歴取得
 	 *

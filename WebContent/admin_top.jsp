@@ -7,7 +7,7 @@
 <head>
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>Legmina</title>
+  <title>管理者</title>
   <meta charset="UTF-8">
      <!-- Bootstrap -->
     <link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
@@ -28,7 +28,7 @@
  <header><s:include value="admin_header.jsp" /></header>
  <div class="container">
             <div class="row">
-                <h1><s:text name="lang.admin_top.title" /></h1>
+                <h1>管理者ページ</h1>
             </div>
         </div>
 </body>

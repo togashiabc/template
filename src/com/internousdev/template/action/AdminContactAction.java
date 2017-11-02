@@ -100,8 +100,6 @@ public class AdminContactAction extends ActionSupport{
 
 	/**
 	 * 実行メソッド DAOから指定した範囲の問い合わせ情報を取得する
-	 * @author Soshi Azuma
-	 * @since 2017/05/22
 	 * @return result 問い合わせ情報の取得に成功したらSUCCESS,失敗したらERROR
 	 */
 public String execute(){
