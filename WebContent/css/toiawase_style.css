@@ -1,0 +1,78 @@
+
+/*admin_user.jspのデザイン*/
+.admin-user-table{
+	margin-bottom: 30px;
+    text-align: right;
+	bgcolor:black;
+	width:80%;
+	height:100;
+	border:1px solid black;
+	cellspacing:2;
+
+}
+.admin-user-table th{
+	height: 50px;
+	border:1px solid black;
+
+}
+.admin-user-table td{
+	height: 40px;
+	border:1px solid black;
+}
+
+
+
+/*admin_contact.jspのデザイン*/
+.admin-contact-table {
+    margin-bottom: 30px;
+    background-color: #000000;
+    margin-left: auto;
+    margin-right: auto;
+    cellspacing: 2;
+}
+.waku {
+    text-align: left;
+}
+
+
+
+/*contact.jspのデザイン*/
+.form-control {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+}
+
+
+
+/* contact_complete.jspのデザイン */
+.c-c-table {/* contact-complete-table */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    cellspacing: 2;
+	table-layout:fixed;
+	width:500px;
+}
+.c-c-left {/* contact-complete-left */
+	text-align: left;
+	height: 50px;
+}
+
+
+
+table td {
+    font-family: "MS ゴシック";
+    word-wrap: break-word;"
+}
+table th {
+ 	padding: 4px;
+ 	text-align: left;
+ }
+
+
+
+.sc {
+	height: 120px;
+	overflow-y: auto;
+}

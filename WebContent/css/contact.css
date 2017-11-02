@@ -1,0 +1,128 @@
+#center {
+	margin: 0px auto;
+	margin-top: 150px;
+	text-align:center;
+}
+
+
+h1 {
+	font-size: 25px;
+
+}
+
+h2 {
+
+}
+
+
+form#form2 {
+	margin: 0px auto;
+	color: #666;
+	padding: 7px;
+	margin-bottom: 15px;
+	border: 3px solid #EEE9ED;
+	border-radius: 15px;
+	width: 725px;
+}
+
+form#form2 p {
+	margin: 7px 0 0;
+	padding: 10px;
+	font-size: 13px;
+	background: #EEE9ED;
+	border-radius: 8px;
+	width: 700px;
+}
+
+form#form2 p:first-child {
+	margin: 0;
+}
+
+form#form2 p span {
+	width: 20em;
+	margin: 0px;
+	display: block;
+	float: left;
+}
+
+form#form2 p:after {
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+	clear: both;
+}
+
+form#form2 p select {
+	width: 170px;
+}
+
+form
+#form2
+
+p
+
+span
+.check
+:
+
+after
+,
+{
+content
+:
+".";
+
+
+display
+:block
+;
+
+
+height
+:
+0;
+
+
+visibility
+:hidden
+;
+
+
+clear
+:both
+;
+
+
+}
+form#form2 .box1 {
+	margin-right: 205px;
+}
+
+form#form2 .box2 {
+	margin-right: 205px;
+}
+
+form#form2 .box3 {
+	margin-right: 260px;
+}
+
+form#form2 .box4 {
+	margin-right: +135px;
+}
+
+form#form2 .box5 {
+	margin-right: 205px;
+}
+
+form#form2 .box6 {
+	margin-right: 130px;
+}
+
+form#form2 .box7 {
+	margin-right: 135px;
+}
+
+form#form2 .box8 {
+	margin-right: 210px;
+}
